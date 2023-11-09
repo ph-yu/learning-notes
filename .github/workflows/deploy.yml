@@ -69,6 +69,7 @@ jobs:
         with:
           branch: gh-pages
           folder: .vitepress/dist
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
   # deploy:
   #   environment:
