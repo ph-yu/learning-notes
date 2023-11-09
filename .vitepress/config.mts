@@ -4,6 +4,7 @@ import { defineConfig } from 'vitepress'
 export default defineConfig({
   title: "Hp.y's Notes",
   description: 'A blog which used to record my notes.',
+  base: '/learning-notes/',
   srcDir: 'src',
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
