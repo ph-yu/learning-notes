@@ -50,8 +50,8 @@ jobs:
           key: ${{ runner.os }}-pnpm-store-${{ hashFiles('**/pnpm-lock.yaml') }}
           restore-keys: ${{ runner.os }}-pnpm-store-
 
-      - name: Setup pages
-        uses: actions/configure-pages@v3
+      # - name: Setup pages
+      #   uses: actions/configure-pages@v3
 
       - name: Install dependencies
         run: pnpm install
