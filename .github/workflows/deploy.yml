@@ -50,8 +50,8 @@ jobs:
           key: ${{ runner.os }}-pnpm-store-${{ hashFiles('**/pnpm-lock.yaml') }}
           restore-keys: ${{ runner.os }}-pnpm-store-
 
-      # - name: Setup pages
-      #   uses: actions/configure-pages@v3
+      - name: Setup pages
+        uses: actions/configure-pages@v3
 
       - name: Install dependencies
         run: pnpm install --no-frozen-lockfile
@@ -65,9 +65,13 @@ jobs:
           path: .vitepress/dist
 
   deploy:
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    needs: build
+    runs-on: ubuntu-latest
     name: Deploy
-    uses: peaceiris/actions-gh-pages@v3
-    with:
-      GITHUB_TOKEN: ${{ github.token }}
-      publish_dir: .vitepress/dist
-      branch: gh-pages
+    steps:
+      - name: Deploy to Github Pages
+        id: deployment
+        uses: actions/deploy-pages@v2
