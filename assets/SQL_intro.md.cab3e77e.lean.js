@@ -1,0 +1,1 @@
+import{_ as s,o as a,c as n,Q as l}from"./chunks/framework.2c467624.js";const D=JSON.parse('{"title":"SQL操作数据库的专用工具","description":"","frontmatter":{},"headers":[],"relativePath":"SQL/intro.md","filePath":"SQL/intro.md"}'),p={name:"SQL/intro.md"},o=l("",36),e=[o];function t(c,r,y,E,i,d){return a(),n("div",null,e)}const A=s(p,[["render",t]]);export{D as __pageData,A as default};
