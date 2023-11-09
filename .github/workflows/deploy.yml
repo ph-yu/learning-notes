@@ -13,11 +13,6 @@ permissions:
   pages: write
   id-token: write
 
-# 并发性
-concurrency:
-  group: pages
-  cancel-in-progress: false
-
 # 创建工作流
 jobs:
   build:
@@ -64,6 +59,7 @@ jobs:
       - name: Deploy
         uses: JamesIves/github-pages-deploy-action@v4.3.3
         with:
+          token: ${{ secrets.ACCESS_TOKEN }}
           branch: gh-pages
           folder: .vitepress/dist
 
