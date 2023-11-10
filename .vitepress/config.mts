@@ -29,5 +29,11 @@ export default defineConfig({
     ],
 
     socialLinks: [{ icon: 'github', link: 'https://github.com/ph-yu' }]
+  },
+  vite: {
+    server: {
+      open: true,
+      port: 5678
+    }
   }
 })
