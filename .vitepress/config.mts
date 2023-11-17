@@ -25,6 +25,10 @@ export default defineConfig({
       {
         text: 'SQL',
         items: [{ text: 'SQL基础', link: '/SQL/intro' }]
+      },
+      {
+        text: 'MongoDB',
+        items: [{ text: '基本概念', link: '/MongoDB/' }]
       }
     ],
 

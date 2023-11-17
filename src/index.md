@@ -13,6 +13,9 @@ hero:
     - theme: alt
       text: SQL
       link: /SQL/intro
+    - theme: alt
+      text: MongoDB
+      link: /MongoDB/
 
 features:
   - title: Feature A
