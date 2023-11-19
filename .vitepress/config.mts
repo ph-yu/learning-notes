@@ -28,7 +28,10 @@ export default defineConfig({
       },
       {
         text: 'MongoDB',
-        items: [{ text: '基本概念', link: '/MongoDB/' }]
+        items: [
+          { text: '基本概念', link: '/MongoDB/' },
+          { text: '数据库操作', link: '/MongoDB/database-operations' }
+        ]
       }
     ],
 
