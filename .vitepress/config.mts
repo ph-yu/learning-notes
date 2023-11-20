@@ -10,11 +10,15 @@ export default defineConfig({
     // https://vitepress.dev/reference/default-theme-config
     nav: [
       { text: '首页', link: '/' },
-      { text: 'TypeScript', link: '/TypeScript/' },
-      { text: 'SQL', link: '/SQL/intro' }
+      { text: 'SQL', link: '/SQL/intro' },
+      { text: 'MongoDB', link: '/MongoDB/' }
     ],
 
     sidebar: [
+      {
+        text: 'Node.js',
+        items: [{ text: 'Node.js回调函数', link: '/Node/callback' }]
+      },
       {
         text: 'TypeScript',
         items: [
