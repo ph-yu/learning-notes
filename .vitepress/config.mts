@@ -30,7 +30,11 @@ export default defineConfig({
         text: 'MongoDB',
         items: [
           { text: '基本概念', link: '/MongoDB/' },
-          { text: '数据库操作', link: '/MongoDB/database-operations' }
+          { text: '数据库操作', link: '/MongoDB/database' },
+          { text: '集合操作', link: '/MongoDB/collection' },
+          { text: '文档操作', link: '/MongoDB/document' },
+          { text: '索引', link: '/MongoDB/createIndex' },
+          { text: '聚合', link: '/MongoDB/aggregate' }
         ]
       }
     ],
