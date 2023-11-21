@@ -17,7 +17,7 @@ export default defineConfig({
     sidebar: [
       {
         text: 'Node.js',
-        items: [{ text: 'Node.js回调函数', link: '/Node/callback' }]
+        items: [{ text: 'Node.js事件循环', link: '/Node/EventLoop' }]
       },
       {
         text: 'TypeScript',
