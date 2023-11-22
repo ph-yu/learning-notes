@@ -9,7 +9,7 @@ hero:
   actions:
     - theme: brand
       text: Node.js
-      link: /Node/
+      link: /Node/global-object
     - theme: alt
       text: TypeScript
       link: /TypeScript/

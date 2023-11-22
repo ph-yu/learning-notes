@@ -17,7 +17,12 @@ export default defineConfig({
     sidebar: [
       {
         text: 'Node.js',
-        items: [{ text: 'Node.js Stream', link: '/Node/Stream' }]
+        items: [
+          { text: 'Node.js 全局对象', link: '/Node/global-object' },
+          { text: 'Node.js fs文件系统', link: '/Node/fs' },
+          { text: 'Node.js path模块', link: '/Node/path' },
+          { text: 'Node.js Stream', link: '/Node/Stream' }
+        ]
       },
       {
         text: 'TypeScript',
