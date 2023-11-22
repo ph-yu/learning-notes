@@ -10,7 +10,7 @@ export default defineConfig({
     // https://vitepress.dev/reference/default-theme-config
     nav: [
       { text: '首页', link: '/' },
-      { text: 'SQL', link: '/SQL/intro' },
+      { text: 'SQL', link: '/SQL/' },
       { text: 'MongoDB', link: '/MongoDB/' }
     ],
 
@@ -28,7 +28,16 @@ export default defineConfig({
       },
       {
         text: 'SQL',
-        items: [{ text: 'SQL基础', link: '/SQL/intro' }]
+        items: [
+          { text: 'SQL简介', link: '/SQL/' },
+          { text: 'DDL相关语句', link: '/SQL/DDL' },
+          { text: 'DML相关语句', link: '/SQL/DML' },
+          { text: 'DQL相关语句', link: '/SQL/DQL' },
+          { text: 'DCL相关语句', link: '/SQL/DCL' },
+          { text: '约束', link: '/SQL/constraint' },
+          { text: '多表查询', link: '/SQL/multi-table-query' },
+          { text: 'MySQL中的函数', link: '/SQL/mysql-function' }
+        ]
       },
       {
         text: 'MongoDB',
