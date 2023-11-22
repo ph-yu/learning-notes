@@ -17,7 +17,7 @@ export default defineConfig({
     sidebar: [
       {
         text: 'Node.js',
-        items: [{ text: 'Node.js事件循环', link: '/Node/EventLoop' }]
+        items: [{ text: 'Node.js Stream', link: '/Node/Stream' }]
       },
       {
         text: 'TypeScript',
