@@ -25,6 +25,13 @@ export default defineConfig({
         ]
       },
       {
+        text: 'React',
+        items: [
+          { text: '第一章', link: '/React/First' },
+          { text: '第二章', link: '/React/Second' }
+        ]
+      },
+      {
         text: 'TypeScript',
         items: [
           { text: '工具类型', link: '/TypeScript/工具类型' },
