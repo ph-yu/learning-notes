@@ -24,7 +24,7 @@ jobs:
       - name: Setup Node
         uses: actions/setup-node@v4
         with:
-          node-version: latest
+          node-version: 20
 
       - name: Install pnpm
         id: pnpm-install
@@ -56,8 +56,8 @@ jobs:
         with:
           path: .vitepress/dist
 
-      - name: Deploy
-        uses: JamesIves/github-pages-deploy-action@v4.3.3
+      - name: Deploy to GitHub Pages
+        uses: JamesIves/github-pages-deploy-action@v4.5.0
         with:
           token: ${{ secrets.ACCESS_TOKEN }}
           branch: gh-pages
