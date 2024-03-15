@@ -24,6 +24,10 @@ export default defineConfig({
         ]
       },
       {
+        text: '常用工具函数',
+        items: [{ text: '复制操作', link: '/Code/copy' }]
+      },
+      {
         text: 'Node.js',
         items: [
           { text: 'Node.js 全局对象', link: '/Node/global-object' },
