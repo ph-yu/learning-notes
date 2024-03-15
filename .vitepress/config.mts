@@ -16,6 +16,14 @@ export default defineConfig({
 
     sidebar: [
       {
+        text: '开发问题汇总',
+        items: [
+          { text: '目录', link: '/Problems/' },
+          { text: 'nvm问题', link: '/Problems/nvm' },
+          { text: '其他问题', link: '/Problems/others' }
+        ]
+      },
+      {
         text: 'Node.js',
         items: [
           { text: 'Node.js 全局对象', link: '/Node/global-object' },

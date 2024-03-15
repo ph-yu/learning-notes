@@ -13,6 +13,9 @@ hero:
     - theme: alt
       text: TypeScript
       link: /TypeScript/
+    - theme: brand
+      text: 开发问题汇总
+      link: /Problems/
 
 features:
   - title: 秋词二首-其一 （唐 · 刘禹锡）
