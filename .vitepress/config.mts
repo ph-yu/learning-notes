@@ -84,5 +84,6 @@ export default defineConfig({
       open: true,
       port: 5678
     }
-  }
+  },
+  ignoreDeadLinks: [/^https?:\/\/localhost/]
 })

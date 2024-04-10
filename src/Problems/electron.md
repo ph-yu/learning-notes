@@ -9,8 +9,8 @@
       content="connect-src *; default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data:"
     />
   ```
-1. 后端和Nginx 不需要配置 `Access-Control-Allow-Origin: *`，否则会报错 The 'Access-Control-Allow-Origin' header contains multiple values localhost:5173, *, but only one is allowed.
-2. 在主进程 `index.ts` 文件中添加如下配置：
+2. 后端和Nginx 不需要配置 `Access-Control-Allow-Origin: *`，否则会报错 The 'Access-Control-Allow-Origin' header contains multiple values 'http://localhost:5173/, *', but only one is allowed.
+3. 在主进程 `index.ts` 文件中添加如下配置：
   ```js
   mainWindow.webContents.session.webRequest.onHeadersReceived((details, callback) => {
     callback({
