@@ -21,6 +21,7 @@ export default defineConfig({
           { text: '目录', link: '/Problems/' },
           { text: 'nvm问题', link: '/Problems/nvm' },
           { text: 'Electron问题', link: '/Problems/electron' },
+          { text: 'Git问题', link: '/Problems/git' },
           { text: '其他问题', link: '/Problems/others' }
         ]
       },
