@@ -1,0 +1,1 @@
+import{_ as s,o as a,c as e,Q as n}from"./chunks/framework.ff4c43a7.js";const h=JSON.parse('{"title":"DML相关语句","description":"","frontmatter":{},"headers":[],"relativePath":"SQL/DML.md","filePath":"SQL/DML.md"}'),l={name:"SQL/DML.md"},o=n("",2),p=[o];function t(c,r,i,d,y,E){return a(),e("div",null,p)}const u=s(l,[["render",t]]);export{h as __pageData,u as default};

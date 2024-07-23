@@ -1,0 +1,1 @@
+import{_ as s,o as a,c as o,Q as l}from"./chunks/framework.ff4c43a7.js";const g=JSON.parse('{"title":"Git","description":"","frontmatter":{},"headers":[],"relativePath":"Problems/git.md","filePath":"Problems/git.md"}'),e={name:"Problems/git.md"},t=l("",5),n=[t];function p(c,r,i,d,y,E){return a(),o("div",null,n)}const u=s(e,[["render",p]]);export{g as __pageData,u as default};

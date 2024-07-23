@@ -1,0 +1,1 @@
+import{_ as s,o as n,c as a,Q as l}from"./chunks/framework.ff4c43a7.js";const A=JSON.parse('{"title":"实现复制功能","description":"","frontmatter":{},"headers":[],"relativePath":"Code/copy.md","filePath":"Code/copy.md"}'),p={name:"Code/copy.md"},o=l("",2),e=[o];function t(c,r,E,y,i,F){return n(),a("div",null,e)}const C=s(p,[["render",t]]);export{A as __pageData,C as default};
