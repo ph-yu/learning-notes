@@ -1,0 +1,1 @@
+import{_ as s,o as a,c as n,Q as l}from"./chunks/framework.b68b6b1c.js";const h=JSON.parse('{"title":"DDL相关语句","description":"","frontmatter":{},"headers":[],"relativePath":"SQL/DDL.md","filePath":"SQL/DDL.md"}'),p={name:"SQL/DDL.md"},e=l("",3),o=[e];function c(t,r,i,y,E,d){return a(),n("div",null,o)}const A=s(p,[["render",c]]);export{h as __pageData,A as default};

@@ -1,1 +1,0 @@
-import{_ as s,o as a,c as l,Q as n}from"./chunks/framework.ff4c43a7.js";const h=JSON.parse('{"title":"Node.js fs文件系统","description":"","frontmatter":{},"headers":[],"relativePath":"Node/fs.md","filePath":"Node/fs.md"}'),o={name:"Node/fs.md"},p=n("",34),t=[p];function e(r,c,E,y,i,d){return a(),l("div",null,t)}const u=s(o,[["render",e]]);export{h as __pageData,u as default};
