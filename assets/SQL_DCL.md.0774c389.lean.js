@@ -1,1 +1,0 @@
-import{_ as s,o as a,c as n,Q as l}from"./chunks/framework.b68b6b1c.js";const h=JSON.parse('{"title":"DCL相关语句","description":"","frontmatter":{},"headers":[],"relativePath":"SQL/DCL.md","filePath":"SQL/DCL.md"}'),p={name:"SQL/DCL.md"},o=l("",6),e=[o];function t(c,r,y,E,i,F){return a(),n("div",null,e)}const D=s(p,[["render",t]]);export{h as __pageData,D as default};
