@@ -1,4 +1,4 @@
-import{_ as s,o as n,c as a,Q as l}from"./chunks/framework.34fdfb80.js";const p="/learning-notes/assets/nvm-install-fail.7882e692.png",o="/learning-notes/assets/adb-setting.ce3664be.png",C=JSON.parse('{"title":"","description":"","frontmatter":{},"headers":[],"relativePath":"Problems/others.md","filePath":"Problems/others.md"}'),e={name:"Problems/others.md"},t=l('<ol><li><h3 id="win11系统-uniapp安装插件失败-检查网络问题和-nvm-install-18" tabindex="-1">win11系统，uniapp安装插件失败：检查网络问题和 <code>nvm install 18</code> <a class="header-anchor" href="#win11系统-uniapp安装插件失败-检查网络问题和-nvm-install-18" aria-label="Permalink to &quot;win11系统，uniapp安装插件失败：检查网络问题和 `nvm install 18`&quot;">​</a></h3></li></ol><p><img src="'+p+'" alt="nvm安装失败"></p><blockquote><p>因为软件的权限不足，需要通过 <strong>以管理员身份</strong> 运行</p></blockquote><ol start="2"><li><h3 id="uniapp开发-运行到模拟器中-需要的配置" tabindex="-1">uniapp开发：运行到模拟器中，需要的配置 <a class="header-anchor" href="#uniapp开发-运行到模拟器中-需要的配置" aria-label="Permalink to &quot;uniapp开发：运行到模拟器中，需要的配置&quot;">​</a></h3><ul><li>打开 “工具-设置-运行配置” <img src="'+o+`" alt="安卓模拟器adb配置"></li><li>运行MuMu模拟器</li><li>在adb目录执行命令：<code>.\\adb connect 127.0.0.1:7555</code></li><li>在HbuilderX点击：运行到手机或模拟器</li></ul></li><li><h3 id="socket-io-client" tabindex="-1">socket.io-client <a class="header-anchor" href="#socket-io-client" aria-label="Permalink to &quot;socket.io-client&quot;">​</a></h3></li></ol><div class="language-js vp-adaptive-theme"><button title="Copy Code" class="copy"></button><span class="lang">js</span><pre class="shiki github-dark vp-code-dark"><code><span class="line"><span style="color:#E1E4E8;">  </span><span style="color:#F97583;">const</span><span style="color:#E1E4E8;"> </span><span style="color:#79B8FF;">socket</span><span style="color:#E1E4E8;"> </span><span style="color:#F97583;">=</span><span style="color:#E1E4E8;"> </span><span style="color:#B392F0;">io</span><span style="color:#E1E4E8;">(</span><span style="color:#9ECBFF;">&#39;wss://localhost:3000&#39;</span><span style="color:#E1E4E8;">, {</span></span>
+import{_ as s,o as n,c as a,Q as l}from"./chunks/framework.34fdfb80.js";const p="/learning-notes/assets/nvm-install-fail.7882e692.png",o="/learning-notes/assets/adb-setting.ce3664be.png",g=JSON.parse('{"title":"","description":"","frontmatter":{},"headers":[],"relativePath":"Problems/others.md","filePath":"Problems/others.md"}'),e={name:"Problems/others.md"},t=l('<ol><li><h3 id="win11系统-uniapp安装插件失败-检查网络问题和-nvm-install-18" tabindex="-1">win11系统，uniapp安装插件失败：检查网络问题和 <code>nvm install 18</code> <a class="header-anchor" href="#win11系统-uniapp安装插件失败-检查网络问题和-nvm-install-18" aria-label="Permalink to &quot;win11系统，uniapp安装插件失败：检查网络问题和 `nvm install 18`&quot;">​</a></h3></li></ol><p><img src="'+p+'" alt="nvm安装失败"></p><blockquote><p>因为软件的权限不足，需要通过 <strong>以管理员身份</strong> 运行</p></blockquote><ol start="2"><li><h3 id="uniapp开发-运行到模拟器中-需要的配置" tabindex="-1">uniapp开发：运行到模拟器中，需要的配置 <a class="header-anchor" href="#uniapp开发-运行到模拟器中-需要的配置" aria-label="Permalink to &quot;uniapp开发：运行到模拟器中，需要的配置&quot;">​</a></h3><ul><li>打开 “工具-设置-运行配置” <img src="'+o+`" alt="安卓模拟器adb配置"></li><li>运行MuMu模拟器</li><li>在adb目录执行命令：<code>.\\adb connect 127.0.0.1:7555</code></li><li>在HbuilderX点击：运行到手机或模拟器</li></ul></li><li><h3 id="socket-io-client" tabindex="-1">socket.io-client <a class="header-anchor" href="#socket-io-client" aria-label="Permalink to &quot;socket.io-client&quot;">​</a></h3></li></ol><div class="language-js vp-adaptive-theme"><button title="Copy Code" class="copy"></button><span class="lang">js</span><pre class="shiki github-dark vp-code-dark"><code><span class="line"><span style="color:#E1E4E8;">  </span><span style="color:#F97583;">const</span><span style="color:#E1E4E8;"> </span><span style="color:#79B8FF;">socket</span><span style="color:#E1E4E8;"> </span><span style="color:#F97583;">=</span><span style="color:#E1E4E8;"> </span><span style="color:#B392F0;">io</span><span style="color:#E1E4E8;">(</span><span style="color:#9ECBFF;">&#39;wss://localhost:3000&#39;</span><span style="color:#E1E4E8;">, {</span></span>
 <span class="line"><span style="color:#E1E4E8;">    path: </span><span style="color:#9ECBFF;">\`/ws/\${</span><span style="color:#79B8FF;">123</span><span style="color:#9ECBFF;">}\`</span><span style="color:#E1E4E8;">,</span></span>
 <span class="line"><span style="color:#E1E4E8;">    transports: [</span><span style="color:#9ECBFF;">&#39;websocket&#39;</span><span style="color:#E1E4E8;">]</span></span>
 <span class="line"><span style="color:#E1E4E8;">  })</span></span>
@@ -60,4 +60,54 @@ import{_ as s,o as n,c as a,Q as l}from"./chunks/framework.34fdfb80.js";const p=
 <span class="line"><span style="color:#24292E;">        typedRef.current?.</span><span style="color:#6F42C1;">destroy</span><span style="color:#24292E;">()</span></span>
 <span class="line"><span style="color:#24292E;">      }</span></span>
 <span class="line"><span style="color:#24292E;">    }</span></span>
-<span class="line"><span style="color:#24292E;">  }, [])</span></span></code></pre></div>`,7),c=[t];function r(E,y,i,F,d,u){return n(),a("div",null,c)}const B=s(e,[["render",r]]);export{C as __pageData,B as default};
+<span class="line"><span style="color:#24292E;">  }, [])</span></span></code></pre></div><ol start="5"><li><h3 id="pm2-常用命令" tabindex="-1">pm2 常用命令 <a class="header-anchor" href="#pm2-常用命令" aria-label="Permalink to &quot;pm2 常用命令&quot;">​</a></h3></li></ol><div class="language-js vp-adaptive-theme"><button title="Copy Code" class="copy"></button><span class="lang">js</span><pre class="shiki github-dark vp-code-dark"><code><span class="line"><span style="color:#E1E4E8;">  </span><span style="color:#6A737D;">// 启动项目</span></span>
+<span class="line"><span style="color:#E1E4E8;">  pm2 start npm </span><span style="color:#F97583;">--</span><span style="color:#E1E4E8;">name </span><span style="color:#9ECBFF;">&#39;my-project&#39;</span><span style="color:#E1E4E8;"> </span><span style="color:#F97583;">--</span><span style="color:#E1E4E8;"> run start </span><span style="color:#F97583;">--</span><span style="color:#E1E4E8;">watch </span><span style="color:#F97583;">--</span><span style="color:#E1E4E8;">ignore</span><span style="color:#F97583;">-</span><span style="color:#E1E4E8;">watch</span><span style="color:#F97583;">=</span><span style="color:#9ECBFF;">&quot;./node_modules&quot;</span><span style="color:#E1E4E8;"> </span><span style="color:#F97583;">--</span><span style="color:#E1E4E8;">cluster</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#E1E4E8;">  </span><span style="color:#6A737D;">// 查看所有项目状态</span></span>
+<span class="line"><span style="color:#E1E4E8;">  pm2 list</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#E1E4E8;">  </span><span style="color:#6A737D;">// 停止项目：</span></span>
+<span class="line"><span style="color:#E1E4E8;">  pm2 stop my</span><span style="color:#F97583;">-</span><span style="color:#E1E4E8;">project</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#E1E4E8;">  </span><span style="color:#6A737D;">// 重启项目：</span></span>
+<span class="line"><span style="color:#E1E4E8;">  pm2 restart my</span><span style="color:#F97583;">-</span><span style="color:#E1E4E8;">project</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#E1E4E8;">  </span><span style="color:#6A737D;">// 删除项目：</span></span>
+<span class="line"><span style="color:#E1E4E8;">  pm2 </span><span style="color:#F97583;">delete</span><span style="color:#E1E4E8;"> my</span><span style="color:#F97583;">-</span><span style="color:#E1E4E8;">project</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#E1E4E8;">  </span><span style="color:#6A737D;">// 启动项目日志：</span></span>
+<span class="line"><span style="color:#E1E4E8;">  pm2 logs my</span><span style="color:#F97583;">-</span><span style="color:#E1E4E8;">project</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#E1E4E8;">  </span><span style="color:#6A737D;">// 停止所有项目</span></span>
+<span class="line"><span style="color:#E1E4E8;">  pm2 stop all</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#E1E4E8;">  </span><span style="color:#6A737D;">// 重启所有项目</span></span>
+<span class="line"><span style="color:#E1E4E8;">  pm2 restart all</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#E1E4E8;">  </span><span style="color:#6A737D;">// 删除所有项目</span></span>
+<span class="line"><span style="color:#E1E4E8;">  pm2 </span><span style="color:#F97583;">delete</span><span style="color:#E1E4E8;"> all</span></span></code></pre><pre class="shiki github-light vp-code-light"><code><span class="line"><span style="color:#24292E;">  </span><span style="color:#6A737D;">// 启动项目</span></span>
+<span class="line"><span style="color:#24292E;">  pm2 start npm </span><span style="color:#D73A49;">--</span><span style="color:#24292E;">name </span><span style="color:#032F62;">&#39;my-project&#39;</span><span style="color:#24292E;"> </span><span style="color:#D73A49;">--</span><span style="color:#24292E;"> run start </span><span style="color:#D73A49;">--</span><span style="color:#24292E;">watch </span><span style="color:#D73A49;">--</span><span style="color:#24292E;">ignore</span><span style="color:#D73A49;">-</span><span style="color:#24292E;">watch</span><span style="color:#D73A49;">=</span><span style="color:#032F62;">&quot;./node_modules&quot;</span><span style="color:#24292E;"> </span><span style="color:#D73A49;">--</span><span style="color:#24292E;">cluster</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#24292E;">  </span><span style="color:#6A737D;">// 查看所有项目状态</span></span>
+<span class="line"><span style="color:#24292E;">  pm2 list</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#24292E;">  </span><span style="color:#6A737D;">// 停止项目：</span></span>
+<span class="line"><span style="color:#24292E;">  pm2 stop my</span><span style="color:#D73A49;">-</span><span style="color:#24292E;">project</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#24292E;">  </span><span style="color:#6A737D;">// 重启项目：</span></span>
+<span class="line"><span style="color:#24292E;">  pm2 restart my</span><span style="color:#D73A49;">-</span><span style="color:#24292E;">project</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#24292E;">  </span><span style="color:#6A737D;">// 删除项目：</span></span>
+<span class="line"><span style="color:#24292E;">  pm2 </span><span style="color:#D73A49;">delete</span><span style="color:#24292E;"> my</span><span style="color:#D73A49;">-</span><span style="color:#24292E;">project</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#24292E;">  </span><span style="color:#6A737D;">// 启动项目日志：</span></span>
+<span class="line"><span style="color:#24292E;">  pm2 logs my</span><span style="color:#D73A49;">-</span><span style="color:#24292E;">project</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#24292E;">  </span><span style="color:#6A737D;">// 停止所有项目</span></span>
+<span class="line"><span style="color:#24292E;">  pm2 stop all</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#24292E;">  </span><span style="color:#6A737D;">// 重启所有项目</span></span>
+<span class="line"><span style="color:#24292E;">  pm2 restart all</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#24292E;">  </span><span style="color:#6A737D;">// 删除所有项目</span></span>
+<span class="line"><span style="color:#24292E;">  pm2 </span><span style="color:#D73A49;">delete</span><span style="color:#24292E;"> all</span></span></code></pre></div><ol start="6"><li><h3 id="" tabindex="-1"><a class="header-anchor" href="#" aria-label="Permalink to &quot;&quot;">​</a></h3></li></ol>`,10),c=[t];function r(E,y,i,F,d,u){return n(),a("div",null,c)}const h=s(e,[["render",r]]);export{g as __pageData,h as default};
