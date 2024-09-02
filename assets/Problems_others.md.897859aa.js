@@ -110,4 +110,4 @@ import{_ as s,o as n,c as a,Q as l}from"./chunks/framework.34fdfb80.js";const p=
 <span class="line"><span style="color:#24292E;">  pm2 restart all</span></span>
 <span class="line"></span>
 <span class="line"><span style="color:#24292E;">  </span><span style="color:#6A737D;">// 删除所有项目</span></span>
-<span class="line"><span style="color:#24292E;">  pm2 </span><span style="color:#D73A49;">delete</span><span style="color:#24292E;"> all</span></span></code></pre></div><ol start="6"><li><h3 id="" tabindex="-1"><a class="header-anchor" href="#" aria-label="Permalink to &quot;&quot;">​</a></h3></li></ol>`,10),c=[t];function r(E,y,i,F,d,u){return n(),a("div",null,c)}const h=s(e,[["render",r]]);export{g as __pageData,h as default};
+<span class="line"><span style="color:#24292E;">  pm2 </span><span style="color:#D73A49;">delete</span><span style="color:#24292E;"> all</span></span></code></pre></div>`,9),c=[t];function r(E,y,i,F,d,u){return n(),a("div",null,c)}const h=s(e,[["render",r]]);export{g as __pageData,h as default};
