@@ -49,3 +49,36 @@
       }
     }, [])
   ```
+
+5. ### pm2 常用命令
+  ```js
+    // 启动项目
+    pm2 start npm --name 'my-project' -- run start --watch --ignore-watch="./node_modules" --cluster
+
+    // 查看所有项目状态
+    pm2 list
+
+    // 停止项目：
+    pm2 stop my-project
+
+    // 重启项目：
+    pm2 restart my-project
+
+    // 删除项目：
+    pm2 delete my-project
+
+    // 启动项目日志：
+    pm2 logs my-project
+
+    // 停止所有项目
+    pm2 stop all
+
+    // 重启所有项目
+    pm2 restart all
+
+    // 删除所有项目
+    pm2 delete all
+
+  ```
+
+6. ### 
