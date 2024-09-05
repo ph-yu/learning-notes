@@ -80,3 +80,62 @@
     pm2 delete all
 
   ```
+
+6. ### dayjs 获取时间段
+   ```js
+    import dayjs from 'dayjs'
+    import quarterOfYear from 'dayjs/plugin/quarterOfYear'
+    dayjs.extend(quarterOfYear)
+
+    export function getTimeRangeByKey(key) {
+      let start = undefined
+      let end = undefined
+      if (key === 'today') { // 今天
+        start = end = dayjs()
+      }
+      if (key === 'yesterday') { // 昨天
+        start = end = dayjs().subtract(1, 'day')
+      }
+      if (key === 'thisWeek') { // 本周
+        start = dayjs().startOf('week').add(1, 'day')
+        end = dayjs().endOf('week').add(1, 'day')
+      }
+      if (key === 'lastWeek') { // 上周
+        start = dayjs().subtract(1, 'week').startOf('week').add(1, 'day')
+        end = dayjs().subtract(1, 'week').endOf('week').add(1, 'day')
+      }
+      if (key === 'thisMonth') { // 本月
+        start = dayjs().startOf('month')
+        end = dayjs().endOf('month')
+      }
+      if (key === 'lastMonth') { // 上月
+        start = dayjs().subtract(1, 'month').startOf('month')
+        end = dayjs().subtract(1, 'month').endOf('month')
+      }
+      if (key === 'thisQuarter') { // 本季度
+        start = dayjs().startOf('quarter')
+        end = dayjs().endOf('quarter')
+      }
+      if (key === 'lastQuarter') { // 上季度
+        start = dayjs().subtract(1, 'quarter').startOf('quarter')
+        end = dayjs().subtract(1, 'quarter').endOf('quarter')
+      }
+      if (key === 'firstHalfYear') { // 上半年
+        start = dayjs().quarter(1).startOf('quarter')
+        end = dayjs().quarter(2).endOf('quarter')
+      }
+      if (key === 'lastHalfYear') { // 下半年
+        start = dayjs().quarter(3).startOf('quarter')
+        end = dayjs().quarter(4).endOf('quarter')
+      }
+      if (key === 'thisYear') { // 本年
+        start = dayjs().startOf('year')
+        end = dayjs().endOf('year')
+      }
+      if (key === 'lastYear') { // 上年
+        start = dayjs().subtract(1, 'year').startOf('year')
+        end = dayjs().subtract(1, 'year').endOf('year')
+      }
+      return [start.format('YYYY-MM-DD'), end.format('YYYY-MM-DD')]
+    }
+   ```
