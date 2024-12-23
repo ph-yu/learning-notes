@@ -6,7 +6,6 @@ export default defineConfig({
   description: 'A blog which used to record my notes.',
   base: '/learning-notes/',
   srcDir: 'src',
-  outDir: 'docs',
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
     nav: [
