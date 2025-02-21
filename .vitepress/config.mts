@@ -49,6 +49,7 @@ export default defineConfig({
       {
         text: 'TypeScript',
         items: [
+          { text: '1.Typescript中的类型运算', link: '/TypeScript/1.Typescript中的类型运算' },
           { text: '工具类型', link: '/TypeScript/工具类型' },
           { text: '从类型中创建类型', link: '/TypeScript/从类型中创建类型' }
         ]
