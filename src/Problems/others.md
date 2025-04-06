@@ -144,3 +144,18 @@
       return [start.format('YYYY-MM-DD'), end.format('YYYY-MM-DD')]
     }
    ```
+
+7. ## 进程占用问题
+```bash
+
+# 查看哪个进程占用了 8081 端口
+Windows: netstat -ano | findstr :8081
+Mac: lsof -i :8081
+
+# Windows输出
+TCP    0.0.0.0:8081           0.0.0.0:0              LISTENING       12345
+
+# 12345 就是进程的 PID
+Windows: taskkill /PID 12345 /F
+Mac: kill -9 12345
+```
