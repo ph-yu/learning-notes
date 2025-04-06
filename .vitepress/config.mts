@@ -48,10 +48,7 @@ export default defineConfig({
       },
       {
         text: 'TypeScript',
-        items: [
-          { text: '工具类型', link: '/TypeScript/工具类型' },
-          { text: '从类型中创建类型', link: '/TypeScript/从类型中创建类型' }
-        ]
+        items: [{ text: '目录', link: '/TypeScript/' }]
       },
       {
         text: 'SQL',
