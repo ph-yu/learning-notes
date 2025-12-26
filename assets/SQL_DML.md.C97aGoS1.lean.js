@@ -1,0 +1,1 @@
+import{_ as i,c as a,o as t,ae as e}from"./chunks/framework.BoX2Qm4w.js";const c=JSON.parse('{"title":"DML相关语句","description":"","frontmatter":{},"headers":[],"relativePath":"SQL/DML.md","filePath":"SQL/DML.md"}'),n={name:"SQL/DML.md"};function l(h,s,p,k,r,d){return t(),a("div",null,[...s[0]||(s[0]=[e("",2)])])}const E=i(n,[["render",l]]);export{c as __pageData,E as default};

@@ -1,0 +1,1 @@
+import{_ as i,c as a,o as n,ae as h}from"./chunks/framework.BoX2Qm4w.js";const g=JSON.parse('{"title":"DQL相关语句","description":"","frontmatter":{},"headers":[],"relativePath":"SQL/DQL.md","filePath":"SQL/DQL.md"}'),k={name:"SQL/DQL.md"};function l(p,s,t,e,E,r){return n(),a("div",null,[...s[0]||(s[0]=[h("",3)])])}const y=i(k,[["render",l]]);export{g as __pageData,y as default};
