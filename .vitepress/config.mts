@@ -23,6 +23,7 @@ export default defineConfig({
           { text: 'nvm问题', link: '/Problems/nvm' },
           { text: 'Electron问题', link: '/Problems/electron' },
           { text: 'Git问题', link: '/Problems/git' },
+          { text: 'Excel问题', link: '/Problems/excel' },
           { text: '其他问题', link: '/Problems/others' }
         ]
       },
