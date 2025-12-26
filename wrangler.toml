@@ -1,0 +1,4 @@
+[routes]
+[[routes.match]]
+pattern = "/learning-notes/*"
+destiny = "learning-notes/index.html"

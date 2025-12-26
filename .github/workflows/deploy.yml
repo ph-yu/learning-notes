@@ -1,0 +1,76 @@
+name: Deploy my learning notes
+
+# 触发条件，当 master/main 分支有push时，执行任务
+on:
+  push:
+    branches:
+      - master
+      - main
+
+# 设置 GITHUB_TOKEN 的权限，以允许部署到 GitHub 页面
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+# 创建工作流
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Setup pnpm
+        id: pnpm-install
+        uses: pnpm/action-setup@v3
+        with:
+          version: 7
+          run_install: false
+
+      - name: Get pnpm store
+        id: pnpm-store
+        shell: bash
+        run: echo "STORE_PATH=$(pnpm store path)" >> $GITHUB_OUTPUT
+
+      - name: Setup pnpm cache
+        uses: actions/cache@v4
+        with:
+          path: ${{ steps.pnpm-store.outputs.STORE_PATH }}
+          key: ${{ runner.os }}-pnpm-store-${{ hashFiles('**/pnpm-lock.yaml') }}
+          restore-keys: ${{ runner.os }}-pnpm-store-
+
+      - name: Install dependencies
+        run: pnpm install --no-frozen-lockfile
+
+      - name: Build
+        run: pnpm run docs:build
+
+      - name: Upload artifact
+        uses: actions/upload-artifact@v4
+        with:
+          path: .vitepress/dist
+
+      - name: Deploy to GitHub Pages
+        uses: JamesIves/github-pages-deploy-action@v4.5.0
+        with:
+          token: ${{ secrets.ACCESS_TOKEN }}
+          branch: gh-pages
+          folder: .vitepress/dist
+
+  # deploy:
+  #   environment:
+  #     name: github-pages
+  #     url: ${{ steps.deployment.outputs.page_url }}
+  #   needs: build
+  #   runs-on: ubuntu-latest
+  #   name: Deploy
+  #   steps:
+  #     - name: Deploy to Github Pages
+  #       id: deployment
+  #       uses: actions/deploy-pages@v2
